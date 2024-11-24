@@ -1,0 +1,42 @@
+export const snapshot = {};
+
+snapshot[`basic tree 1`] = `
+"└─ a
+"
+`;
+
+snapshot[`nested tree 1`] = `
+"├─ a
+└─ b
+   └─ c
+"
+`;
+
+snapshot[`self-referential tree 1`] = `
+"├─ a
+├─ b
+│  ├─ c
+│  └─ z
+└─ d
+   ├─ c
+   └─ z
+"
+`;
+
+snapshot[`multi-type tree 1`] = `
+"├─ a
+├─ b
+└─ c
+   ├─ d
+   └─ e
+"
+`;
+
+snapshot[`show values tree 1`] = `
+"├─ a: 1
+├─ b: b
+└─ c
+   ├─ d: true
+   └─ e: null
+"
+`;
